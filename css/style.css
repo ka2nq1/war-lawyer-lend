@@ -1,0 +1,313 @@
+header {
+    background-image: url(../images/bg.jpg);
+    background-size: contain;
+    position: relative;
+}
+
+header .logo-wrap {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.55rem;
+    gap: 2.27rem;
+    border-bottom: 1px solid #243660;
+    margin-bottom: 2rem;
+}
+
+header .hero-text {
+    margin-left: -4.6rem;
+    margin-top: 3.1rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    z-index: 0;
+}
+
+header .hero-person {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+header .hero-second-text {
+    margin-bottom: 7.3rem;
+    z-index: 2;
+    position: relative;
+}
+
+header .price-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    z-index: 2;
+    position: relative;
+}
+
+header .new,
+header .old {
+    border: 2px solid #fffcfc;
+    border-radius: 150px;
+    width: 13.5rem;
+    height: 5.7rem;
+    padding-top: 1.6rem;
+}
+
+header .new {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 80%;
+    text-align: center;
+    color: #000;
+    background: #fff;
+}
+
+header .new span {
+    font-size: 2rem;
+}
+
+header .old {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 111%;
+    text-align: center;
+    color: #bfbfbf;
+    background: #152241;
+}
+
+header .old span {
+    text-decoration: line-through;
+}
+
+header .btn {
+    z-index: 2;
+    position: relative;
+}
+
+.whom ul {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.whom li {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    background: #1f2854;
+    border-radius: 5px;
+    padding: 2.5rem 2rem 3rem 2rem;
+}
+
+.whom img {
+    width: 6.5rem;
+}
+
+.results .text-wrap {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.results .text-wrap img {
+    width: 4.5rem;
+}
+
+.author .author-img {
+    width: calc(100% + 9.2rem);
+    margin-top: 1.6rem;
+    margin-bottom: 5rem;
+    margin-left: -4.6rem;
+}
+
+.author ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+.author li {
+    position: relative;
+    padding-left: 1.3rem;
+}
+
+.author li::before {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 0;
+    border-radius: 50%;
+    background: #5885fa;
+}
+
+.program ul {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.program li {
+    padding: 1.3rem 1.3rem 2.8rem 1.3rem;
+    background: #5885fa;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3.4rem;
+}
+
+.program li img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.program li div {
+    display: flex;
+    gap: 2rem;
+    padding-left: 1.9rem;
+}
+
+.program li div span {
+    width: 3.3rem;
+    height: 3.3rem;
+    background: #ffff;
+    border-radius: 50%;
+    font-weight: 500;
+    text-align: center;
+    color: #5885fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-item {
+    border-radius: 5px;
+    overflow: hidden;
+    background: #5885fa;
+}
+
+.slick-slide img {
+    width: 30.7rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 55.2rem;
+    width: 100%;
+}
+
+.slider-item img {
+    width: 30.7rem;
+    margin: 0 auto;
+}
+
+.slick-prev,
+.slick-next {
+    transform: translate(0) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    width: 5rem !important;
+    height: 5rem !important;
+    aspect-ratio: 53/53;
+}
+
+.slick-prev {
+    background-image: url(../images/slider-arrow.svg) !important;
+    z-index: 1;
+}
+
+.slick-next {
+    background-image: url(../images/slider-arrow.svg) !important;
+    transform: rotate(-180deg) !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    display: none;
+}
+
+.slick-dots {
+    bottom: 3rem !important;
+}
+
+.slick-dots li button:before {
+    color: #ffff !important;
+}
+
+.FAQ .accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.FAQ .accordion-item {
+    transition: max-height 0.4s ease-out;
+    padding: 3rem 0;
+    border-bottom: 1px solid #243660;
+}
+
+.FAQ .accordion-item:first-child {
+    border-top: 1px solid #243660;
+}
+
+.FAQ .accordion-header {
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.FAQ .accordion-header:before {
+    content: '+';
+    display: inline-block;
+    right: 0;
+    top: 0rem;
+    font-size: 5rem;
+    font-weight: 250;
+    position: absolute;
+}
+
+.FAQ .accordion-header p {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #5885fa;
+}
+
+.FAQ .active .accordion-header:before {
+    content: '-';
+}
+
+.FAQ .active .accordion-content {
+    max-height: 50rem;
+}
+
+.FAQ .accordion-content {
+    overflow: hidden;
+    padding: 0;
+    max-height: 0;
+}
+
+.FAQ .accordion-content p {
+    padding-top: 1.5rem;
+}
+
+footer {
+    margin-top: 8rem!important;
+    font-weight: 300;
+    letter-spacing: -0.02rem;
+    line-height: 145%;
+}
+
+footer p:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+footer .blue {
+    color: #4f69a4;
+}
